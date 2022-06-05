@@ -1,0 +1,48 @@
+@media (min-width: 1024px) {
+    .main {
+        padding-top: 0;
+    }
+    
+    .card {
+        display: flex;
+        max-width: 860px;
+        height: 480px;
+        position: relative;
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: 590% 72%;
+
+        .card__illustration-container {
+            width: 50%;
+        }
+
+        &__illustration {
+            max-width: none;
+            width: 100%;
+            top: 0;
+            left: -90px;
+            margin-bottom: 0;
+            margin-top: 0;
+            content: url(../images/illustration-woman-online-desktop.svg);
+        }
+
+        &__box {
+            display: block;
+        }
+
+        &__faq {
+            width: 50%;
+            padding-top: 2.5rem;
+            padding-right:  4rem;
+        }
+
+        &__title {
+            text-align: start;
+        }
+    }
+
+    .attribution {
+        position: fixed;
+        bottom: 20px;
+    }
+}

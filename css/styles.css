@@ -1,0 +1,202 @@
+/*Layout*/
+/*The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px*/
+/*Font*/
+/*- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+/*font-family: 'Kumbh Sans', sans-serif;*/
+/*Colors*/
+/*Gradient*/
+/*Background gradient:*/
+/*Primary*/
+/*Text*/
+/*Neutral*/
+/*Text*/
+/*Dividers*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.main {
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 8rem;
+}
+
+.card {
+  background-color: #fff;
+  width: 90%;
+  max-width: 500px;
+  height: 580px;
+  border-radius: 1rem;
+  padding: 1rem 1rem 3rem;
+  background-image: url(../images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 2%;
+}
+
+.card__illustration-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__illustration {
+  width: 85%;
+  max-width: 260px;
+  position: relative;
+  top: -134px;
+  margin-bottom: -5rem;
+}
+
+.card__box {
+  position: absolute;
+  width: 165px;
+  top: 167px;
+  left: -98px;
+  display: none;
+}
+
+.card__title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card__question-container {
+  border-bottom: 1px solid #e7e7e9;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.card__question-container img {
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.card__question-container:hover .card__question {
+  color: #f47c57;
+}
+
+.card__question-container--selected .card__question {
+  font-weight: 700;
+}
+
+.card__question-container--selected .card__answer {
+  top: 0;
+  height: 55px;
+  visibility: visible;
+}
+
+.card__question-container--selected img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.card__question {
+  color: #4a4b5e;
+  font-size: 0.95rem;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.card__answer {
+  color: #787887;
+  font-size: 0.88rem;
+  -webkit-transition: height 500ms;
+  transition: height 500ms;
+  height: 0;
+  visibility: hidden;
+}
+
+.attribution {
+  font-size: 11px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.attribution__link {
+  color: #000;
+}
+
+@media (min-width: 1024px) {
+  .main {
+    padding-top: 0;
+  }
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 860px;
+    height: 480px;
+    position: relative;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 590% 72%;
+  }
+  .card .card__illustration-container {
+    width: 50%;
+  }
+  .card__illustration {
+    max-width: none;
+    width: 100%;
+    top: 0;
+    left: -90px;
+    margin-bottom: 0;
+    margin-top: 0;
+    content: url(../images/illustration-woman-online-desktop.svg);
+  }
+  .card__box {
+    display: block;
+  }
+  .card__faq {
+    width: 50%;
+    padding-top: 2.5rem;
+    padding-right: 4rem;
+  }
+  .card__title {
+    text-align: start;
+  }
+  .attribution {
+    position: fixed;
+    bottom: 20px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

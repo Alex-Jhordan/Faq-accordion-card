@@ -1,0 +1,39 @@
+/*Layout*/
+/*The designs were created to the following widths:
+- Mobile: 375px
+- Desktop: 1440px*/
+
+
+/*Font*/
+/*- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700*/
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+/*font-family: 'Kumbh Sans', sans-serif;*/
+
+
+/*Colors*/
+
+/*Gradient*/
+
+/*Background gradient:*/
+
+$main-background-color-1 : hsl(273, 75%, 66%); //Soft violet
+$main-background-color-2 : hsl(240, 73%, 65%); //Soft blue
+
+/*Primary*/
+
+/*Text*/
+
+$selected-text-color: hsl(238, 29%, 16%); //Very dark desaturated blue
+$hover-text-color: hsl(14, 88%, 65%); //Soft red
+
+/*Neutral*/
+
+/*Text*/
+
+$question-text-color : hsl(237, 12%, 33%); //Very dark grayish blue
+$answer-text-color : hsl(240, 6%, 50%); //Dark grayish blue
+
+/*Dividers*/
+
+$divider-background-color : hsl(240, 5%, 91%); //Light grayish blue
