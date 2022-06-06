@@ -11,9 +11,12 @@
         background-image: url(../images/bg-pattern-desktop.svg);
         background-repeat: no-repeat;
         background-position: 590% 72%;
+        padding-left: 0;
 
         .card__illustration-container {
             width: 50%;
+            overflow: hidden;
+            padding-left: 1rem;
         }
 
         &__illustration {
